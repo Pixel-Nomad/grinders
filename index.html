@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Completely prevent indexing -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, noydir">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+
+    <!-- Prevent translation -->
+    <meta name="google" content="notranslate">
+
+    <!-- Prevent phone number detection -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Grinder Paradise - 50 Themes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        :root {
+            --primary: #00c6ff;
+            --primary-dark: #0072ff;
+            --secondary: #1a1f36;
+            --accent: #ff6b6b;
+            --success: #4cd964;
+            --warning: #ffd166;
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --text: #f0f6fc;
+            --text-muted: #8b949e;
+            --border: rgba(255, 255, 255, 0.1);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+            --glow: 0 0 10px rgba(0, 198, 255, 0.5);
+            --theme-name: 'default';
+        }
+
+        /* Theme 1: Neon Cyberpunk */
+        .theme-neon {
+            --primary: #ff00ff;
+            --primary-dark: #9d00ff;
+            --secondary: #0a0a0a;
+            --accent: #00ffcc;
+            --success: #00ff00;
+            --warning: #ffff00;
+            --card-bg: rgba(0, 0, 0, 0.7);
+            --text: #ffffff;
+            --text-muted: #cccccc;
+            --border: rgba(255, 0, 255, 0.3);
+            --shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+            --glow: 0 0 15px rgba(255, 0, 255, 0.7);
+            --theme-name: 'neon';
+        }
+
+        /* Theme 2: Frosted Glass Apple-UI */
+        .theme-frosted {
+            --primary: #007aff;
+            --primary-dark: #0056b3;
+            --secondary: rgba(255, 255, 255, 0.1);
+            --accent: #ff3b30;
+            --success: #34c759;
+            --warning: #ffcc00;
+            --card-bg: rgba(255, 255, 255, 0.15);
+            --text: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+            --border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 0 rgba(0, 122, 255, 0);
+            --theme-name: 'frosted';
+        }
+
+        /* Theme 3: Red-Black Criminal Underworld */
+        .theme-criminal {
+            --primary: #ff0000;
+            --primary-dark: #990000;
+            --secondary: #000000;
+            --accent: #ff9900;
+            --success: #00aa00;
+            --warning: #ffcc00;
+            --card-bg: rgba(0, 0, 0, 0.8);
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+            --border: rgba(255, 0, 0, 0.4);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            --glow: 0 0 10px rgba(255, 0, 0, 0.5);
+            --theme-name: 'criminal';
+        }
+
+        /* Theme 4: Blue Tech Corporate Dashboard */
+        .theme-corporate {
+            --primary: #0066cc;
+            --primary-dark: #004499;
+            --secondary: #1a2530;
+            --accent: #ff6600;
+            --success: #00aa66;
+            --warning: #ffaa00;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #e6f7ff;
+            --text-muted: #8ca0b3;
+            --border: rgba(0, 102, 204, 0.3);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            --glow: 0 0 5px rgba(0, 102, 204, 0.3);
+            --theme-name: 'corporate';
+        }
+
+        /* Theme 5: FiveM Roleplay Professional UI */
+        .theme-fivem {
+            --primary: #1e90ff;
+            --primary-dark: #0066cc;
+            --secondary: #0f1923;
+            --accent: #ff4500;
+            --success: #32cd32;
+            --warning: #ffd700;
+            --card-bg: rgba(30, 30, 46, 0.8);
+            --text: #f0f8ff;
+            --text-muted: #a9a9b3;
+            --border: rgba(30, 144, 255, 0.3);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --glow: 0 0 8px rgba(30, 144, 255, 0.4);
+            --theme-name: 'fivem';
+        }
+
+        /* Theme 6: Dark Matrix */
+        .theme-matrix {
+            --primary: #00ff41;
+            --primary-dark: #00cc33;
+            --secondary: #000000;
+            --accent: #ff003c;
+            --success: #00ff41;
+            --warning: #ffff00;
+            --card-bg: rgba(0, 0, 0, 0.85);
+            --text: #00ff41;
+            --text-muted: #00cc33;
+            --border: rgba(0, 255, 65, 0.3);
+            --shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+            --glow: 0 0 10px rgba(0, 255, 65, 0.5);
+            --theme-name: 'matrix';
+        }
+
+        /* Theme 7: Sunset Orange */
+        .theme-sunset {
+            --primary: #ff6b35;
+            --primary-dark: #e55627;
+            --secondary: #2d1e2f;
+            --accent: #f7c59f;
+            --success: #5cb85c;
+            --warning: #ffc107;
+            --card-bg: rgba(45, 30, 47, 0.8);
+            --text: #f8f9fa;
+            --text-muted: #b8b8b8;
+            --border: rgba(255, 107, 53, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 10px rgba(255, 107, 53, 0.4);
+            --theme-name: 'sunset';
+        }
+
+        /* Theme 8: Ocean Blue */
+        .theme-ocean {
+            --primary: #0077b6;
+            --primary-dark: #023e8a;
+            --secondary: #03045e;
+            --accent: #00b4d8;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(3, 4, 94, 0.7);
+            --text: #caf0f8;
+            --text-muted: #90e0ef;
+            --border: rgba(0, 119, 182, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 10px rgba(0, 180, 216, 0.4);
+            --theme-name: 'ocean';
+        }
+
+        /* Theme 9: Forest Green */
+        .theme-forest {
+            --primary: #2e8b57;
+            --primary-dark: #1f6f4e;
+            --secondary: #0d2618;
+            --accent: #90ee90;
+            --success: #4caf50;
+            --warning: #ffa500;
+            --card-bg: rgba(13, 38, 24, 0.8);
+            --text: #e8f5e8;
+            --text-muted: #a8d5a8;
+            --border: rgba(46, 139, 87, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 10px rgba(144, 238, 144, 0.4);
+            --theme-name: 'forest';
+        }
+
+        /* Theme 10: Royal Purple */
+        .theme-royal {
+            --primary: #6a0dad;
+            --primary-dark: #4b0082;
+            --secondary: #1a0b2e;
+            --accent: #9370db;
+            --success: #32cd32;
+            --warning: #ffd700;
+            --card-bg: rgba(26, 11, 46, 0.8);
+            --text: #e6e6fa;
+            --text-muted: #c9c9e5;
+            --border: rgba(106, 13, 173, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 10px rgba(147, 112, 219, 0.4);
+            --theme-name: 'royal';
+        }
+
+        /* Theme 11: Gold Luxury */
+        .theme-gold {
+            --primary: #ffd700;
+            --primary-dark: #daa520;
+            --secondary: #1a1a1a;
+            --accent: #ffffff;
+            --success: #32cd32;
+            --warning: #ff8c00;
+            --card-bg: rgba(26, 26, 26, 0.9);
+            --text: #ffd700;
+            --text-muted: #daa520;
+            --border: rgba(255, 215, 0, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(255, 215, 0, 0.4);
+            --theme-name: 'gold';
+        }
+
+        /* Theme 12: Pink Cotton Candy */
+        .theme-cottoncandy {
+            --primary: #ff9ff3;
+            --primary-dark: #f368e0;
+            --secondary: #ff9ff3;
+            --accent: #54a0ff;
+            --success: #1dd1a1;
+            --warning: #feca57;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --text: #2d3436;
+            --text-muted: #636e72;
+            --border: rgba(255, 159, 243, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(255, 159, 243, 0.4);
+            --theme-name: 'cottoncandy';
+        }
+
+        /* Theme 13: Dark Monokai */
+        .theme-monokai {
+            --primary: #f92672;
+            --primary-dark: #d33682;
+            --secondary: #272822;
+            --accent: #a6e22e;
+            --success: #a6e22e;
+            --warning: #fd971f;
+            --card-bg: rgba(39, 40, 34, 0.9);
+            --text: #f8f8f2;
+            --text-muted: #75715e;
+            --border: rgba(249, 38, 114, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(249, 38, 114, 0.4);
+            --theme-name: 'monokai';
+        }
+
+        /* Theme 14: Solarized Dark */
+        .theme-solarized-dark {
+            --primary: #b58900;
+            --primary-dark: #8b6f00;
+            --secondary: #002b36;
+            --accent: #cb4b16;
+            --success: #859900;
+            --warning: #b58900;
+            --card-bg: rgba(0, 43, 54, 0.9);
+            --text: #839496;
+            --text-muted: #586e75;
+            --border: rgba(181, 137, 0, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --glow: 0 0 10px rgba(181, 137, 0, 0.4);
+            --theme-name: 'solarized-dark';
+        }
+
+        /* Theme 15: Solarized Light */
+        .theme-solarized-light {
+            --primary: #b58900;
+            --primary-dark: #8b6f00;
+            --secondary: #fdf6e3;
+            --accent: #cb4b16;
+            --success: #859900;
+            --warning: #b58900;
+            --card-bg: rgba(253, 246, 227, 0.9);
+            --text: #657b83;
+            --text-muted: #93a1a1;
+            --border: rgba(181, 137, 0, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(181, 137, 0, 0.4);
+            --theme-name: 'solarized-light';
+        }
+
+        /* Theme 16: Dracula */
+        .theme-dracula {
+            --primary: #bd93f9;
+            --primary-dark: #8a61d9;
+            --secondary: #282a36;
+            --accent: #ff79c6;
+            --success: #50fa7b;
+            --warning: #f1fa8c;
+            --card-bg: rgba(40, 42, 54, 0.9);
+            --text: #f8f8f2;
+            --text-muted: #6272a4;
+            --border: rgba(189, 147, 249, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(189, 147, 249, 0.4);
+            --theme-name: 'dracula';
+        }
+
+        /* Theme 17: Nord */
+        .theme-nord {
+            --primary: #88c0d0;
+            --primary-dark: #5e81ac;
+            --secondary: #2e3440;
+            --accent: #bf616a;
+            --success: #a3be8c;
+            --warning: #ebcb8b;
+            --card-bg: rgba(46, 52, 64, 0.9);
+            --text: #eceff4;
+            --text-muted: #d8dee9;
+            --border: rgba(136, 192, 208, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --glow: 0 0 10px rgba(136, 192, 208, 0.4);
+            --theme-name: 'nord';
+        }
+
+        /* Theme 18: Gruvbox */
+        .theme-gruvbox {
+            --primary: #fe8019;
+            --primary-dark: #d65d0e;
+            --secondary: #282828;
+            --accent: #fb4934;
+            --success: #b8bb26;
+            --warning: #fabd2f;
+            --card-bg: rgba(40, 40, 40, 0.9);
+            --text: #ebdbb2;
+            --text-muted: #a89984;
+            --border: rgba(254, 128, 25, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(254, 128, 25, 0.4);
+            --theme-name: 'gruvbox';
+        }
+
+        /* Theme 19: Material Dark */
+        .theme-material-dark {
+            --primary: #bb86fc;
+            --primary-dark: #9a67ea;
+            --secondary: #121212;
+            --accent: #03dac6;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(30, 30, 30, 0.9);
+            --text: #e0e0e0;
+            --text-muted: #9e9e9e;
+            --border: rgba(187, 134, 252, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(187, 134, 252, 0.4);
+            --theme-name: 'material-dark';
+        }
+
+        /* Theme 20: Material Light */
+        .theme-material-light {
+            --primary: #6200ee;
+            --primary-dark: #3700b3;
+            --secondary: #ffffff;
+            --accent: #03dac6;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --text: #212121;
+            --text-muted: #757575;
+            --border: rgba(98, 0, 238, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(98, 0, 238, 0.4);
+            --theme-name: 'material-light';
+        }
+
+        /* Theme 21: One Dark */
+        .theme-one-dark {
+            --primary: #61afef;
+            --primary-dark: #528bff;
+            --secondary: #282c34;
+            --accent: #e06c75;
+            --success: #98c379;
+            --warning: #e5c07b;
+            --card-bg: rgba(40, 44, 52, 0.9);
+            --text: #abb2bf;
+            --text-muted: #5c6370;
+            --border: rgba(97, 175, 239, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(97, 175, 239, 0.4);
+            --theme-name: 'one-dark';
+        }
+
+        /* Theme 22: One Light */
+        .theme-one-light {
+            --primary: #4078f2;
+            --primary-dark: #2962ff;
+            --secondary: #fafafa;
+            --accent: #e45649;
+            --success: #50a14f;
+            --warning: #c18401;
+            --card-bg: rgba(250, 250, 250, 0.9);
+            --text: #383a42;
+            --text-muted: #a0a1a7;
+            --border: rgba(64, 120, 242, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(64, 120, 242, 0.4);
+            --theme-name: 'one-light';
+        }
+
+        /* Theme 23: GitHub Dark */
+        .theme-github-dark {
+            --primary: #58a6ff;
+            --primary-dark: #1f6feb;
+            --secondary: #0d1117;
+            --accent: #f78166;
+            --success: #3fb950;
+            --warning: #d29922;
+            --card-bg: rgba(13, 17, 23, 0.9);
+            --text: #f0f6fc;
+            --text-muted: #8b949e;
+            --border: rgba(88, 166, 255, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(88, 166, 255, 0.4);
+            --theme-name: 'github-dark';
+        }
+
+        /* Theme 24: GitHub Light */
+        .theme-github-light {
+            --primary: #0969da;
+            --primary-dark: #0550ae;
+            --secondary: #ffffff;
+            --accent: #cf222e;
+            --success: #1a7f37;
+            --warning: #9a6700;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --text: #24292f;
+            --text-muted: #656d76;
+            --border: rgba(9, 105, 218, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(9, 105, 218, 0.4);
+            --theme-name: 'github-light';
+        }
+
+        /* Theme 25: Discord */
+        .theme-discord {
+            --primary: #5865f2;
+            --primary-dark: #4752c4;
+            --secondary: #36393f;
+            --accent: #ed4245;
+            --success: #57f287;
+            --warning: #fee75c;
+            --card-bg: rgba(54, 57, 63, 0.9);
+            --text: #ffffff;
+            --text-muted: #b9bbbe;
+            --border: rgba(88, 101, 242, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(88, 101, 242, 0.4);
+            --theme-name: 'discord';
+        }
+
+        /* Theme 26: Twitter */
+        .theme-twitter {
+            --primary: #1da1f2;
+            --primary-dark: #1a91da;
+            --secondary: #15202b;
+            --accent: #794bc4;
+            --success: #17bf63;
+            --warning: #ffad1f;
+            --card-bg: rgba(21, 32, 43, 0.9);
+            --text: #ffffff;
+            --text-muted: #8899a6;
+            --border: rgba(29, 161, 242, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(29, 161, 242, 0.4);
+            --theme-name: 'twitter';
+        }
+
+        /* Theme 27: Instagram */
+        .theme-instagram {
+            --primary: #e1306c;
+            --primary-dark: #c13584;
+            --secondary: #121212;
+            --accent: #f77737;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(18, 18, 18, 0.9);
+            --text: #ffffff;
+            --text-muted: #a8a8a8;
+            --border: rgba(225, 48, 108, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(225, 48, 108, 0.4);
+            --theme-name: 'instagram';
+        }
+
+        /* Theme 28: Spotify */
+        .theme-spotify {
+            --primary: #1db954;
+            --primary-dark: #1ed760;
+            --secondary: #191414;
+            --accent: #ffffff;
+            --success: #1db954;
+            --warning: #ffa42b;
+            --card-bg: rgba(25, 20, 20, 0.9);
+            --text: #ffffff;
+            --text-muted: #b3b3b3;
+            --border: rgba(29, 185, 84, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(29, 185, 84, 0.4);
+            --theme-name: 'spotify';
+        }
+
+        /* Theme 29: Netflix */
+        .theme-netflix {
+            --primary: #e50914;
+            --primary-dark: #b2070f;
+            --secondary: #141414;
+            --accent: #ffffff;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --card-bg: rgba(20, 20, 20, 0.9);
+            --text: #ffffff;
+            --text-muted: #757575;
+            --border: rgba(229, 9, 20, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(229, 9, 20, 0.4);
+            --theme-name: 'netflix';
+        }
+
+        /* Theme 30: YouTube */
+        .theme-youtube {
+            --primary: #ff0000;
+            --primary-dark: #cc0000;
+            --secondary: #282828;
+            --accent: #ffffff;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(40, 40, 40, 0.9);
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+            --border: rgba(255, 0, 0, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(255, 0, 0, 0.4);
+            --theme-name: 'youtube';
+        }
+
+        /* Theme 31: Windows 95 */
+        .theme-windows95 {
+            --primary: #000080;
+            --primary-dark: #000060;
+            --secondary: #c0c0c0;
+            --accent: #ff0000;
+            --success: #008000;
+            --warning: #808000;
+            --card-bg: rgba(192, 192, 192, 0.9);
+            --text: #000000;
+            --text-muted: #808080;
+            --border: rgba(0, 0, 0, 0.7);
+            --shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+            --glow: none;
+            --theme-name: 'windows95';
+        }
+
+        /* Theme 32: Retro Gaming */
+        .theme-retro {
+            --primary: #ff00ff;
+            --primary-dark: #cc00cc;
+            --secondary: #0000aa;
+            --accent: #00ffff;
+            --success: #00ff00;
+            --warning: #ffff00;
+            --card-bg: rgba(0, 0, 170, 0.8);
+            --text: #ffffff;
+            --text-muted: #aaaaaa;
+            --border: rgba(255, 255, 255, 0.7);
+            --shadow: 4px 4px 0px rgba(0, 0, 0, 0.7);
+            --glow: 0 0 5px rgba(255, 255, 255, 0.7);
+            --theme-name: 'retro';
+        }
+
+        /* Theme 33: Cyber Terminal */
+        .theme-cyber-terminal {
+            --primary: #39ff14;
+            --primary-dark: #2ccc0d;
+            --secondary: #0a0a0a;
+            --accent: #ff073a;
+            --success: #39ff14;
+            --warning: #ffe700;
+            --card-bg: rgba(10, 10, 10, 0.95);
+            --text: #39ff14;
+            --text-muted: #2ccc0d;
+            --border: rgba(57, 255, 20, 0.4);
+            --shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+            --glow: 0 0 10px rgba(57, 255, 20, 0.5);
+            --theme-name: 'cyber-terminal';
+        }
+
+        /* Theme 34: Purple Haze */
+        .theme-purple-haze {
+            --primary: #9b59b6;
+            --primary-dark: #8e44ad;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --card-bg: rgba(44, 62, 80, 0.9);
+            --text: #ecf0f1;
+            --text-muted: #bdc3c7;
+            --border: rgba(155, 89, 182, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --glow: 0 0 10px rgba(155, 89, 182, 0.4);
+            --theme-name: 'purple-haze';
+        }
+
+        /* Theme 35: Miami Vice */
+        .theme-miami-vice {
+            --primary: #ff00ff;
+            --primary-dark: #cc00cc;
+            --secondary: #00ffff;
+            --accent: #ffff00;
+            --success: #00ff00;
+            --warning: #ff8000;
+            --card-bg: rgba(0, 255, 255, 0.1);
+            --text: #ffffff;
+            --text-muted: #cccccc;
+            --border: rgba(255, 0, 255, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 15px rgba(255, 0, 255, 0.5);
+            --theme-name: 'miami-vice';
+        }
+
+        /* Theme 36: Coffee */
+        .theme-coffee {
+            --primary: #8b4513;
+            --primary-dark: #654321;
+            --secondary: #3e2723;
+            --accent: #d2691e;
+            --success: #556b2f;
+            --warning: #daa520;
+            --card-bg: rgba(62, 39, 35, 0.9);
+            --text: #d2b48c;
+            --text-muted: #a0522d;
+            --border: rgba(139, 69, 19, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --glow: 0 0 10px rgba(139, 69, 19, 0.4);
+            --theme-name: 'coffee';
+        }
+
+        /* Theme 37: Midnight Blue */
+        .theme-midnight {
+            --primary: #191970;
+            --primary-dark: #000080;
+            --secondary: #0a0a2a;
+            --accent: #4169e1;
+            --success: #32cd32;
+            --warning: #ffd700;
+            --card-bg: rgba(10, 10, 42, 0.9);
+            --text: #e6e6fa;
+            --text-muted: #b0c4de;
+            --border: rgba(25, 25, 112, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(65, 105, 225, 0.4);
+            --theme-name: 'midnight';
+        }
+
+        /* Theme 38: Cherry Blossom */
+        .theme-cherry {
+            --primary: #ffb7c5;
+            --primary-dark: #ff9eb5;
+            --secondary: #fff0f5;
+            --accent: #dda0dd;
+            --success: #98fb98;
+            --warning: #ffdab9;
+            --card-bg: rgba(255, 240, 245, 0.9);
+            --text: #8b4513;
+            --text-muted: #cd5c5c;
+            --border: rgba(255, 183, 197, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(255, 183, 197, 0.4);
+            --theme-name: 'cherry';
+        }
+
+        /* Theme 39: Arctic Ice */
+        .theme-arctic {
+            --primary: #87ceeb;
+            --primary-dark: #4682b4;
+            --secondary: #f0f8ff;
+            --accent: #b0e0e6;
+            --success: #afeeee;
+            --warning: #f0e68c;
+            --card-bg: rgba(240, 248, 255, 0.9);
+            --text: #2f4f4f;
+            --text-muted: #708090;
+            --border: rgba(135, 206, 235, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(135, 206, 235, 0.4);
+            --theme-name: 'arctic';
+        }
+
+        /* Theme 40: Halloween */
+        .theme-halloween {
+            --primary: #ff8c00;
+            --primary-dark: #ff4500;
+            --secondary: #000000;
+            --accent: #8b0000;
+            --success: #228b22;
+            --warning: #daa520;
+            --card-bg: rgba(0, 0, 0, 0.9);
+            --text: #ff8c00;
+            --text-muted: #8b4513;
+            --border: rgba(255, 140, 0, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+            --glow: 0 0 10px rgba(255, 140, 0, 0.5);
+            --theme-name: 'halloween';
+        }
+
+        /* Theme 41: Christmas */
+        .theme-christmas {
+            --primary: #d50000;
+            --primary-dark: #b71c1c;
+            --secondary: #1b5e20;
+            --accent: #ffffff;
+            --success: #2e7d32;
+            --warning: #ffd600;
+            --card-bg: rgba(27, 94, 32, 0.9);
+            --text: #ffffff;
+            --text-muted: #c8e6c9;
+            --border: rgba(213, 0, 0, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 10px rgba(213, 0, 0, 0.4);
+            --theme-name: 'christmas';
+        }
+
+        /* Theme 42: Valentine */
+        .theme-valentine {
+            --primary: #e91e63;
+            --primary-dark: #c2185b;
+            --secondary: #fce4ec;
+            --accent: #ad1457;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(252, 228, 236, 0.9);
+            --text: #880e4f;
+            --text-muted: #c2185b;
+            --border: rgba(233, 30, 99, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(233, 30, 99, 0.4);
+            --theme-name: 'valentine';
+        }
+
+        /* Theme 43: Easter */
+        .theme-easter {
+            --primary: #ff99cc;
+            --primary-dark: #ff66b2;
+            --secondary: #f3e5f5;
+            --accent: #ba68c8;
+            --success: #81c784;
+            --warning: #fff176;
+            --card-bg: rgba(243, 229, 245, 0.9);
+            --text: #6a1b9a;
+            --text-muted: #ab47bc;
+            --border: rgba(255, 153, 204, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(255, 153, 204, 0.4);
+            --theme-name: 'easter';
+        }
+
+        /* Theme 44: Tropical */
+        .theme-tropical {
+            --primary: #ff6b6b;
+            --primary-dark: #ee5a52;
+            --secondary: #4ecdc4;
+            --accent: #45b7d1;
+            --success: #96ceb4;
+            --warning: #feca57;
+            --card-bg: rgba(78, 205, 196, 0.1);
+            --text: #2c2c54;
+            --text-muted: #40407a;
+            --border: rgba(255, 107, 107, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(255, 107, 107, 0.4);
+            --theme-name: 'tropical';
+        }
+
+        /* Theme 45: Desert */
+        .theme-desert {
+            --primary: #d2691e;
+            --primary-dark: #b8860b;
+            --secondary: #f5deb3;
+            --accent: #8b4513;
+            --success: #9acd32;
+            --warning: #daa520;
+            --card-bg: rgba(245, 222, 179, 0.9);
+            --text: #8b4513;
+            --text-muted: #a0522d;
+            --border: rgba(210, 105, 30, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --glow: 0 0 10px rgba(210, 105, 30, 0.4);
+            --theme-name: 'desert';
+        }
+
+        /* Theme 46: Ocean Depths */
+        .theme-ocean-depths {
+            --primary: #006994;
+            --primary-dark: #005073;
+            --secondary: #003b46;
+            --accent: #66a5ad;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --card-bg: rgba(0, 59, 70, 0.9);
+            --text: #c4dfe6;
+            --text-muted: #66a5ad;
+            --border: rgba(0, 105, 148, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --glow: 0 0 10px rgba(0, 105, 148, 0.4);
+            --theme-name: 'ocean-depths';
+        }
+
+        /* Theme 47: Space */
+        .theme-space {
+            --primary: #6c5ce7;
+            --primary-dark: #5b4fcf;
+            --secondary: #2d3436;
+            --accent: #fd79a8;
+            --success: #00b894;
+            --warning: #fdcb6e;
+            --card-bg: rgba(45, 52, 54, 0.9);
+            --text: #dfe6e9;
+            --text-muted: #b2bec3;
+            --border: rgba(108, 92, 231, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(108, 92, 231, 0.4);
+            --theme-name: 'space';
+        }
+
+        /* Theme 48: Galaxy */
+        .theme-galaxy {
+            --primary: #9b59b6;
+            --primary-dark: #8e44ad;
+            --secondary: #1a1a2e;
+            --accent: #e74c3c;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --card-bg: rgba(26, 26, 46, 0.9);
+            --text: #e2e2e2;
+            --text-muted: #b8b8b8;
+            --border: rgba(155, 89, 182, 0.4);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 10px rgba(155, 89, 182, 0.4);
+            --theme-name: 'galaxy';
+        }
+
+        /* Theme 49: Sunset Gradient */
+        .theme-sunset-gradient {
+            --primary: #ff6b6b;
+            --primary-dark: #ee5a52;
+            --secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent: #feca57;
+            --success: #48dbfb;
+            --warning: #ff9ff3;
+            --card-bg: rgba(255, 255, 255, 0.1);
+            --text: #ffffff;
+            --text-muted: #e0e0e0;
+            --border: rgba(255, 255, 255, 0.2);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 10px rgba(255, 107, 107, 0.4);
+            --theme-name: 'sunset-gradient';
+        }
+
+        /* Theme 50: Rainbow */
+        .theme-rainbow {
+            --primary: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff, #ff00ff);
+            --primary-dark: linear-gradient(90deg, #cc0000, #cc6600, #cccc00, #00cc00, #00cccc, #0000cc, #6600cc, #cc00cc);
+            --secondary: #000000;
+            --accent: #ffffff;
+            --success: #00ff00;
+            --warning: #ffff00;
+            --card-bg: rgba(0, 0, 0, 0.8);
+            --text: #ffffff;
+            --text-muted: #cccccc;
+            --border: rgba(255, 255, 255, 0.3);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --glow: 0 0 15px rgba(255, 255, 255, 0.5);
+            --theme-name: 'rainbow';
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--secondary);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            transition: var(--transition);
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(var(--primary-rgb), 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(var(--accent-rgb), 0.1) 0%, transparent 50%);
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Theme Selector */
+        .theme-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .theme-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text);
+            font-size: 1.2rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .theme-btn:hover {
+            transform: scale(1.1);
+            box-shadow: var(--glow);
+        }
+
+        .theme-options {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1rem;
+            display: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+
+        .theme-options::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .theme-options::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        .theme-options::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        .theme-option {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 0.7rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .theme-option:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .theme-option.active {
+            background: rgba(var(--primary-rgb), 0.2);
+            border-left: 3px solid var(--primary);
+        }
+
+        .theme-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--border);
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .app-title {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+            text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.3);
+        }
+
+        .app-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.6s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow), var(--glow);
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(var(--primary-rgb), 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover .stat-icon {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(var(--primary-rgb), 0.3);
+        }
+
+        .stat-icon i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: var(--primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Date Picker */
+        .date-section {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.7s ease;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .section-title i {
+            color: var(--primary);
+        }
+
+        .date-picker {
+            display: flex;
+            justify-content: center;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .date-input-wrapper {
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius);
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .date-input-wrapper:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.2), var(--glow);
+        }
+
+        .date-input-wrapper i {
+            color: var(--primary);
+            margin-right: 0.7rem;
+        }
+
+        .date-input {
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-size: 1rem;
+            width: 100%;
+            outline: none;
+        }
+
+        .date-input::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+
+        /* Activities Grid */
+        .activities-section {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.8s ease;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .activity-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            transition: var(--transition);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .activity-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), var(--glow);
+            border-color: var(--primary);
+        }
+
+        .activity-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .activity-card.selected {
+            border-color: var(--primary);
+            background: rgba(var(--primary-rgb), 0.1);
+            box-shadow: var(--glow);
+        }
+
+        .activity-card.selected::before {
+            transform: scaleX(1);
+        }
+
+        .activity-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .activity-checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 2px solid var(--border);
+            background: rgba(0, 0, 0, 0.2);
+            margin-right: 0.8rem;
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .activity-checkbox:checked {
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5);
+        }
+
+        .activity-checkbox:checked::after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .activity-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .activity-price {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--warning);
+            margin-top: auto;
+        }
+
+        .extra-earnings-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+
+        .extra-earnings-card:focus-within {
+            border-color: var(--primary);
+            box-shadow: var(--glow);
+        }
+
+        .extra-earnings-input {
+            display: flex;
+            align-items: center;
+            margin-top: 0.8rem;
+        }
+
+        .extra-earnings-input span {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.7rem 1rem;
+            border-radius: var(--radius) 0 0 var(--radius);
+            border: 1px solid var(--border);
+            border-right: none;
+        }
+
+        .extra-earnings-input input {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 0.7rem 1rem;
+            color: var(--text);
+            width: 100%;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .extra-earnings-input input:focus {
+            border-color: var(--primary);
+        }
+
+        .actions-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--radius);
+            border: none;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.4), var(--glow);
+        }
+
+        .btn-danger {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(var(--accent-rgb), 0.4);
+        }
+
+        /* Earnings Table */
+        .earnings-section {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.9s ease;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            border-radius: var(--radius);
+        }
+
+        .earnings-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        .earnings-table thead {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .earnings-table th {
+            padding: 1rem 1.2rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .earnings-table td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .earnings-table tbody tr {
+            transition: var(--transition);
+        }
+
+        .earnings-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .earning-amount {
+            font-weight: 700;
+            color: var(--warning);
+        }
+
+        .total-amount {
+            font-weight: 700;
+            color: var(--success);
+        }
+
+        .live-total-row {
+            background: rgba(var(--primary-rgb), 0.1) !important;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-title {
+                font-size: 2.2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .date-picker {
+                max-width: 100%;
+            }
+            
+            .theme-selector {
+                top: 10px;
+                right: 10px;
+            }
+            
+            .theme-options {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .app-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.1rem;
+            }
+            
+            .stat-value {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body class="theme-default">
+    <div class="theme-selector">
+        <div class="theme-btn" id="theme-toggle">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div class="theme-options" id="theme-options">
+            <!-- Theme options will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="app-title">Grinder Paradise</h1>
+            <p class="app-subtitle">Track your earnings and maximize your profits</p>
+        </header>
+        
+        <!-- Stats Section -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-value" id="total-earnings">$0</div>
+                <div class="stat-label">Total Earnings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <div class="stat-value" id="daily-average">$0</div>
+                <div class="stat-label">Daily Average</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-value" id="best-day">$0</div>
+                <div class="stat-label">Best Day</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="stat-value" id="activities-count">0</div>
+                <div class="stat-label">Activities Tracked</div>
+            </div>
+        </section>
+        
+        <!-- Date Selection -->
+        <section class="date-section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-alt"></i>
+                Select Date
+            </h2>
+            <div class="date-picker">
+                <div class="date-input-wrapper">
+                    <i class="fas fa-calendar"></i>
+                    <input type="date" class="date-input" id="date-input">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Activities Selection -->
+        <section class="activities-section">
+            <h2 class="section-title">
+                <i class="fas fa-tasks"></i>
+                Select Activities
+            </h2>
+            <div class="activities-grid">
+                <!-- Activity 1 -->
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <input type="checkbox" class="activity-checkbox" id="hunting">
+                        <label for="hunting" class="activity-name" id="hunting-card">Hunting</label>
+                    </div>
+                    <div class="activity-price">$12,000</div>
+                </div>
+                
+                <!-- Activity 2 -->
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <input type="checkbox" class="activity-checkbox" id="hunting2">
+                        <label for="hunting2" class="activity-name" id="hunting2-card">Hunting #2</label>
+                    </div>
+                    <div class="activity-price">$12,000</div>
+                </div>
+                
+                <!-- Activity 3 -->
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <input type="checkbox" class="activity-checkbox" id="diving">
+                        <label for="diving" class="activity-name" id="diving-card">8x Diving</label>
+                    </div>
+                    <div class="activity-price">$50,000</div>
+                </div>
+                
+                <!-- Activity 4 -->
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <input type="checkbox" class="activity-checkbox" id="mining">
+                        <label for="mining" class="activity-name" id="mining-card">Mining</label>
+                    </div>
+                    <div class="activity-price">$10,000</div>
+                </div>
+                
+                <!-- Activity 5 -->
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <input type="checkbox" class="activity-checkbox" id="oxy">
+                        <label for="oxy" class="activity-name" id="oxy-card">Oxy Run</label>
+                    </div>
+                    <div class="activity-price">$8,000</div>
+                </div>
+                
+                <!-- Activity 6 -->
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <input type="checkbox" class="activity-checkbox" id="trucking">
+                        <label for="trucking" class="activity-name" id="trucking-card">Trucking</label>
+                    </div>
+                    <div class="activity-price">$10,000</div>
+                </div>
+                
+                <!-- Extra Earnings -->
+                <div class="extra-earnings-card">
+                    <div class="activity-name">Extra Earnings</div>
+                    <div class="extra-earnings-input">
+                        <span>$</span>
+                        <input type="text" placeholder="Amount" id="extra-earnings">
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="actions-card">
+                    <button class="btn btn-primary" id="add-entry">
+                        <i class="fas fa-plus-circle"></i>
+                        Add Entry
+                    </button>
+                    <button class="btn btn-danger" id="remove-last">
+                        <i class="fas fa-trash-alt"></i>
+                        Remove Last
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Earnings Table -->
+        <section class="earnings-section">
+            <h2 class="section-title">
+                <i class="fas fa-history"></i>
+                Earnings History
+            </h2>
+            <div class="table-container">
+                <table class="earnings-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Earning</th>
+                            <th>Extra Earning</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Live total row will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Save data (auto-converts objects/arrays to JSON)
+        function setItem(key, value) {
+            try {
+                const data = typeof value === "string" ? value : JSON.stringify(value);
+                localStorage.setItem(key, data);
+                return true;
+            } catch (err) {
+                console.error("LocalStorage setItem error:", err);
+                return false;
+            }
+        }
+
+        // Get data (auto-parses JSON)
+        function getItem(key) {
+            try {
+                const data = localStorage.getItem(key);
+                try {
+                    return JSON.parse(data); // If valid JSON
+                } catch {
+                    return data; // If normal string
+                }
+            } catch (err) {
+                console.error("LocalStorage getItem error:", err);
+                return null;
+            }
+        }
+
+        // Remove single key
+        function removeItem(key) {
+            try {
+                localStorage.removeItem(key);
+                return true;
+            } catch (err) {
+                console.error("LocalStorage removeItem error:", err);
+                return false;
+            }
+        }
+
+        // Clear all localStorage
+        function clearAll() {
+            try {
+                localStorage.clear();
+                return true;
+            } catch (err) {
+                console.error("LocalStorage clear error:", err);
+                return false;
+            }
+        }
+
+        // Check if key exists
+        function hasKey(key) {
+            return localStorage.getItem(key) !== null;
+        }
+
+        // Push item into an array stored in localStorage
+        function pushToArray(key, value) {
+            const arr = getItem(key) || [];
+            if (!Array.isArray(arr)) return false;
+            arr.push(value);
+            setItem(key, arr);
+            return arr;
+        }
+    </script>
+
+    <script>
+        $(document).ready(() => {
+            const activities = ["hunting", "hunting2", "diving", "mining", "oxy", "trucking"];
+            const extraInput = $("#extra-earnings");
+
+            // Theme definitions
+            const themes = [
+                { name: "Default", class: "default" },
+                { name: "Neon Cyberpunk", class: "neon" },
+                { name: "Frosted Glass", class: "frosted" },
+                { name: "Criminal Underworld", class: "criminal" },
+                { name: "Corporate Dashboard", class: "corporate" },
+                { name: "FiveM Roleplay", class: "fivem" },
+                { name: "Dark Matrix", class: "matrix" },
+                { name: "Sunset Orange", class: "sunset" },
+                { name: "Ocean Blue", class: "ocean" },
+                { name: "Forest Green", class: "forest" },
+                { name: "Royal Purple", class: "royal" },
+                { name: "Gold Luxury", class: "gold" },
+                { name: "Pink Cotton Candy", class: "cottoncandy" },
+                { name: "Dark Monokai", class: "monokai" },
+                { name: "Solarized Dark", class: "solarized-dark" },
+                { name: "Solarized Light", class: "solarized-light" },
+                { name: "Dracula", class: "dracula" },
+                { name: "Nord", class: "nord" },
+                { name: "Gruvbox", class: "gruvbox" },
+                { name: "Material Dark", class: "material-dark" },
+                { name: "Material Light", class: "material-light" },
+                { name: "One Dark", class: "one-dark" },
+                { name: "One Light", class: "one-light" },
+                { name: "GitHub Dark", class: "github-dark" },
+                { name: "GitHub Light", class: "github-light" },
+                { name: "Discord", class: "discord" },
+                { name: "Twitter", class: "twitter" },
+                { name: "Instagram", class: "instagram" },
+                { name: "Spotify", class: "spotify" },
+                { name: "Netflix", class: "netflix" },
+                { name: "YouTube", class: "youtube" },
+                { name: "Windows 95", class: "windows95" },
+                { name: "Retro Gaming", class: "retro" },
+                { name: "Cyber Terminal", class: "cyber-terminal" },
+                { name: "Purple Haze", class: "purple-haze" },
+                { name: "Miami Vice", class: "miami-vice" },
+                { name: "Coffee", class: "coffee" },
+                { name: "Midnight Blue", class: "midnight" },
+                { name: "Cherry Blossom", class: "cherry" },
+                { name: "Arctic Ice", class: "arctic" },
+                { name: "Halloween", class: "halloween" },
+                { name: "Christmas", class: "christmas" },
+                { name: "Valentine", class: "valentine" },
+                { name: "Easter", class: "easter" },
+                { name: "Tropical", class: "tropical" },
+                { name: "Desert", class: "desert" },
+                { name: "Ocean Depths", class: "ocean-depths" },
+                { name: "Space", class: "space" },
+                { name: "Galaxy", class: "galaxy" },
+                { name: "Sunset Gradient", class: "sunset-gradient" },
+                { name: "Rainbow", class: "rainbow" }
+            ];
+
+            // Populate theme options
+            const themeOptions = $("#theme-options");
+            themes.forEach(theme => {
+                themeOptions.append(`
+                    <div class="theme-option theme-${theme.class}" data-theme="${theme.class}">
+                        <div class="theme-color"></div>
+                        <span>${theme.name}</span>
+                    </div>
+                `);
+            });
+
+            // Theme Management
+            const savedTheme = getItem("selectedTheme") || "default";
+            $("body").removeClass().addClass(`theme-${savedTheme}`);
+            $(`.theme-option[data-theme="${savedTheme}"]`).addClass("active").siblings().removeClass("active");
+            
+            // Theme selector toggle
+            $("#theme-toggle").click(function() {
+                $("#theme-options").slideToggle(300);
+            });
+            
+            // Theme selection
+            $(".theme-option").click(function() {
+                const theme = $(this).data("theme");
+                $("body").removeClass().addClass(`theme-${theme}`);
+                $(this).addClass("active").siblings().removeClass("active");
+                setItem("selectedTheme", theme);
+                $("#theme-options").slideUp(300);
+                
+                // Update RGB values for the new theme
+                updateRGBValues();
+            });
+
+            // Calculate RGB values for CSS variables
+            function updateRGBValues() {
+                const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary').trim();
+                const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+                
+                // Convert hex to RGB
+                function hexToRgb(hex) {
+                    // Handle gradient case
+                    if (hex.includes('gradient')) {
+                        return { r: 0, g: 198, b: 255 }; // Default blue
+                    }
+                    
+                    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                    return result ? {
+                        r: parseInt(result[1], 16),
+                        g: parseInt(result[2], 16),
+                        b: parseInt(result[3], 16)
+                    } : null;
+                }
+                
+                const primaryRGB = hexToRgb(primaryColor);
+                const accentRGB = hexToRgb(accentColor);
+                
+                if (primaryRGB) {
+                    document.documentElement.style.setProperty('--primary-rgb', `${primaryRGB.r}, ${primaryRGB.g}, ${primaryRGB.b}`);
+                }
+                if (accentRGB) {
+                    document.documentElement.style.setProperty('--accent-rgb', `${accentRGB.r}, ${accentRGB.g}, ${accentRGB.b}`);
+                }
+            }
+            
+            // Initialize RGB values
+            updateRGBValues();
+
+            // Add a live total row above the table
+            const table = $(".earnings-table tbody");
+            const liveRow = $('<tr class="live-total-row"><td>LIVE</td><td class="live-earning">$0</td><td class="live-extra">$0</td><td class="live-total">$0</td></tr>');
+            table.before(liveRow);
+
+            // Restore saved selected date
+            if (hasKey("selectedDate")) {
+                const savedDate = getItem("selectedDate");
+                $("#date-input").val(savedDate);
+                loadActivities(savedDate);
+                loadExtraEarnings(savedDate);
+            }
+
+            function updateLiveTotal() {
+                let earning = 0;
+                activities.forEach(act => {
+                    if ($("#" + act).prop("checked")) {
+                        const val = $("#" + act).closest(".activity-card").find(".activity-price").text().replace(/\$|,/g, "");
+                        earning += parseFloat(val) || 0;
+                    }
+                });
+                const extra = parseFloat(extraInput.val()) || 0;
+                $(".live-earning").text(`$${earning.toLocaleString()}`);
+                $(".live-extra").text(`$${extra.toLocaleString()}`);
+                $(".live-total").text(`$${(earning + extra).toLocaleString()}`);
+            }
+
+            // Update stats
+            function updateStats() {
+                const history = getItem("earningsHistory") || [];
+                let totalEarnings = 0;
+                let bestDay = 0;
+                let activitiesCount = 0;
+                
+                history.forEach(entry => {
+                    totalEarnings += entry.total;
+                    if (entry.total > bestDay) bestDay = entry.total;
+                    activitiesCount += entry.selectedActivities.length;
+                });
+                
+                const dailyAverage = history.length > 0 ? totalEarnings / history.length : 0;
+                
+                $("#total-earnings").text(`$${totalEarnings.toLocaleString()}`);
+                $("#daily-average").text(`$${dailyAverage.toLocaleString()}`);
+                $("#best-day").text(`$${bestDay.toLocaleString()}`);
+                $("#activities-count").text(activitiesCount);
+            }
+
+            // Track activity and extra input changes
+            $(".activity-checkbox").on("change", function () {
+                saveActivityStates();
+                updateLiveTotal();
+            });
+            extraInput.on("input", function () {
+                saveExtraEarnings();
+                updateLiveTotal();
+            });
+
+            // Track date change
+            $("#date-input").on("change", function () {
+                const date = $(this).val();
+                setItem("selectedDate", date);
+                loadActivities(date);
+                loadExtraEarnings(date);
+                updateLiveTotal();
+            });
+
+            // Add Entry button
+            $("#add-entry").click(function () {
+                const date = $("#date-input").val();
+                if (!date) return alert("Please select a date.");
+
+                let earning = 0;
+                const selectedActivities = [];
+                activities.forEach(act => {
+                    if ($("#" + act).prop("checked")) {
+                        selectedActivities.push(act);
+                        const val = $("#" + act).closest(".activity-card").find(".activity-price").text().replace(/\$|,/g, "");
+                        earning += parseFloat(val) || 0;
+                    }
+                });
+
+                const extra = parseFloat(extraInput.val()) || 0;
+                const total = earning + extra;
+
+                // Save entry to localStorage
+                const history = getItem("earningsHistory") || [];
+                history.push({ date, selectedActivities, earning, extra, total });
+                setItem("earningsHistory", history);
+
+                // Reset live total row and inputs
+                $(".live-earning").text("$0");
+                $(".live-extra").text("$0");
+                $(".live-total").text("$0");
+                $(".activity-checkbox").prop("checked", false);
+                $(".activity-card").removeClass("selected");
+                extraInput.val("");
+
+                renderHistory();
+                updateStats();
+            });
+
+            // Remove Last button
+            $("#remove-last").click(function () {
+                const history = getItem("earningsHistory") || [];
+                history.pop();
+                setItem("earningsHistory", history);
+                renderHistory();
+                updateStats();
+            });
+
+            // Render history table
+            function renderHistory() {
+                const tbody = $(".earnings-table tbody");
+                tbody.empty();
+                const history = getItem("earningsHistory") || [];
+                history.forEach(entry => {
+                    tbody.append(`<tr>
+                        <td>${entry.date}</td>
+                        <td>$${entry.earning.toLocaleString()}</td>
+                        <td>$${entry.extra.toLocaleString()}</td>
+                        <td>$${entry.total.toLocaleString()}</td>
+                    </tr>`);
+                });
+            }
+
+            // Save activity states per date
+            function saveActivityStates() {
+                const date = $("#date-input").val();
+                if (!date) return;
+                const activityStates = getItem("activitiesByDate") || {};
+                if (!activityStates[date]) activityStates[date] = {};
+                activities.forEach(act => activityStates[date][act] = $("#" + act).prop("checked"));
+                setItem("activitiesByDate", activityStates);
+            }
+
+            // Save extra earnings per date
+            function saveExtraEarnings() {
+                const date = $("#date-input").val();
+                if (!date) return;
+                const extraStates = getItem("extraEarningsByDate") || {};
+                extraStates[date] = parseFloat(extraInput.val()) || 0;
+                setItem("extraEarningsByDate", extraStates);
+            }
+
+            // Load activity states for a date
+            function loadActivities(date) {
+                const activityStates = getItem("activitiesByDate") || {};
+                if (activityStates[date]) {
+                    activities.forEach(act => {
+                        const isChecked = activityStates[date][act] || false;
+                        $("#" + act).prop("checked", isChecked);
+                        $("#" + act).closest(".activity-card").toggleClass("selected", isChecked);
+                    });
+                } else {
+                    activities.forEach(act => {
+                        $("#" + act).prop("checked", false);
+                        $("#" + act).closest(".activity-card").removeClass("selected");
+                    });
+                }
+            }
+
+            // Load extra earnings for a date
+            function loadExtraEarnings(date) {
+                const extraStates = getItem("extraEarningsByDate") || {};
+                extraInput.val(extraStates[date] || "");
+            }
+
+            // Card click toggle
+            $(".activity-card").click(function(e) {
+                if (!$(e.target).is("input[type='checkbox']")) {
+                    const checkbox = $(this).find(".activity-checkbox");
+                    checkbox.prop("checked", !checkbox.prop("checked")).trigger("change");
+                }
+                $(this).toggleClass("selected", $(this).find(".activity-checkbox").prop("checked"));
+                updateLiveTotal();
+            });
+
+            // Initial render
+            renderHistory();
+            updateLiveTotal();
+            updateStats();
+        });
+    </script>
+</body>
+</html>
